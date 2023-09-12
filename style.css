@@ -76,26 +76,41 @@ body {
   }
 
   .sketch-pad-square {
-    border: 100px;
     width: 500px;
     height: 500px;
-    border-color: white;
-    margin-bottom: auto;
     background-color: grey;
+    display: flex;
+    flex-direction: column;
+    border-color: #1f2937;
+    border-style: solid;
+    border-width: 10px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: stretch;
   }
 
   .sketch-pad-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: auto;
     gap: 40px;
   }
 
   .small-box {
-    border: 5px;
-    border-color: blue;
-    width: 10px;
-    height: 10px;
+    border: 1px;
+    border-color: #1f2937;
+    border-style: solid;
     background-color: whitesmoke;
+    flex-basis: calc(100%/2);
+    aspect-ratio: 1;    
+}
+
+  .small-box:hover {
+    background-color: blue;
   }
+
+  
