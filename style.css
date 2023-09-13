@@ -105,8 +105,8 @@ body {
     border-color: #1f2937;
     border-style: solid;
     background-color: whitesmoke;
-    flex-basis: calc(100%/2);
-    aspect-ratio: 1;    
+    aspect-ratio: 1;
+    flex-basis: calc(100%/2);    
 }
 
   .small-box:hover {
