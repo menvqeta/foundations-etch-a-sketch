@@ -23,15 +23,19 @@ function addSquares(lengthOfGridSide, flexBasisValue) {
             var smallBox = document.createElement('div');
             smallBox.setAttribute('class', 'small-box');
             smallBox.style.flexBasis = flexBasisValue;
-            (function(currentSmallBox) {
-                currentSmallBox.addEventListener('mouseover', function() {
-                    colorSquareOnHovering(currentSmallBox);
-                });
-            })(smallBox);
+            addEventListenerToBox(smallBox);
             row.appendChild(smallBox);
         }
         sketchPadSquare.appendChild(row);
     }
+}
+
+function addEventListenerToBox(smallBox) {
+    (function (currentSmallBox) {
+        currentSmallBox.addEventListener('mouseover', function () {
+            colorSquareOnHovering(currentSmallBox);
+        });
+    })(smallBox);
 }
 
 function colorSquareOnHovering(smallBox) {  

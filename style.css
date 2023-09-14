@@ -10,6 +10,9 @@ body {
     min-height: 100vh;
 }
 
+/* ------------------------------------------------- */
+                /* HEADER SECTION */
+/* ------------------------------------------------- */
 
 .header-section {
     display: flex;
@@ -23,26 +26,9 @@ body {
     font-size: 50px;
 }
 
-.footer-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: aliceblue;
-    align-items: center;
-    background-color: #1f2937;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 20px;
-    margin-top: auto;
-    gap: 20px;
-}
-
-.footer-link a {
-    text-decoration: none;
-    font-size: 27x;
-    font-weight: bold;
-    color: darkgrey;
-  }
+/* ------------------------------------------------- */
+                /* BUTTONS SECTION */
+/* ------------------------------------------------- */
 
   
 .button-section {
@@ -77,6 +63,11 @@ body {
     gap: 10px;
 }
 
+/* ------------------------------------------------- */
+                /* SKETCH PAD AND SQUARES SECTION */
+/* ------------------------------------------------- */
+
+
 .sketch-pad-square {
     width: 500px;
     height: 500px;
@@ -87,19 +78,19 @@ body {
     border-style: solid;
     border-width: 10px;
 }
-  
-.row {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    align-items: stretch;
-}
 
 .sketch-pad-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
+}
+  
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: stretch;
 }
 
 .small-box {
@@ -111,25 +102,39 @@ body {
     flex-basis: calc(100%/2);    
 }
 
-.small-box:hover {
-    background-color: blue;
+/* ------------------------------------------------- */
+                /* FOOTER SECTION */
+/* ------------------------------------------------- */
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: aliceblue;
+    align-items: center;
+    background-color: #1f2937;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    margin-top: auto;
+    gap: 20px;
+}
+
+.footer-link {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#github-link {
+    margin: 0;
+    padding: 0;
 }
 
 #github-image {
-    width: 10%;
-    height: auto;
- }
+    width: auto; /* Allow the image width to adjust based on its content */
+    height: 25px; /* Set a specific height for the image if needed */
+}
 
-  /* #github-link {
-    margin-right: 0;
-    display: block;
-    width: 40%;
-  } */
-
-.footer-link {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-} 
 
   
