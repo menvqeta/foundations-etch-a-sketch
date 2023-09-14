@@ -45,37 +45,39 @@ body {
   }
 
   
-  .button-section {
+.button-section {
     display: flex;
     flex-direction: row;
     gap: 30px;
     justify-content: center;
-  }
-  .buttons {
+}
+
+.buttons {
     background-color: #1f2937;
     border-radius: 5px;
     font-size: 20px;
     border: none;
     color: aliceblue;
     padding: 5px;
-  }
+}
 
-  .buttons:hover {
+.buttons:hover {
     background-color: darkgrey;
-  }
+}
 
-  .buttons:active {
+.buttons:active {
     background-color: pink;
-  }
-  .slider-section {
+}
+  
+.slider-section {
     color:aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-  }
+}
 
-  .sketch-pad-square {
+.sketch-pad-square {
     width: 500px;
     height: 500px;
     background-color: grey;
@@ -84,33 +86,50 @@ body {
     border-color: #1f2937;
     border-style: solid;
     border-width: 10px;
-  }
+}
   
-  .row {
+.row {
     display: flex;
     flex-direction: row;
     flex: 1;
     align-items: stretch;
-  }
+}
 
-  .sketch-pad-section {
+.sketch-pad-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-  }
+}
 
-  .small-box {
-    border: 1px;
+.small-box {
+    border: 0.5px;
     border-color: #1f2937;
     border-style: solid;
-    background-color: whitesmoke;
+    background-color: white;
     aspect-ratio: 1;
     flex-basis: calc(100%/2);    
 }
 
-  .small-box:hover {
+.small-box:hover {
     background-color: blue;
-  }
+}
+
+#github-image {
+    width: 10%;
+    height: auto;
+ }
+
+  /* #github-link {
+    margin-right: 0;
+    display: block;
+    width: 40%;
+  } */
+
+.footer-link {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+} 
 
   
